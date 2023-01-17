@@ -29,145 +29,127 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AutorizForm));
-            this.loginLabel = new System.Windows.Forms.Label();
-            this.passwLabel = new System.Windows.Forms.Label();
-            this.autorizLabel = new System.Windows.Forms.Label();
-            this.loginTextBox = new System.Windows.Forms.TextBox();
-            this.passwTextBox = new System.Windows.Forms.TextBox();
-            this.enterButton = new System.Windows.Forms.Button();
-            this.registButton = new System.Windows.Forms.Button();
-            this.captchaLabel = new System.Windows.Forms.Label();
-            this.captchaTextBox = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.lablCapcha = new System.Windows.Forms.Label();
+            this.capchaTEXT = new System.Windows.Forms.TextBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.passTBOX = new System.Windows.Forms.TextBox();
+            this.loginTbox = new System.Windows.Forms.TextBox();
+            this.regBUTTON = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.entButt = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // loginLabel
+            // panel2
             // 
-            this.loginLabel.AutoSize = true;
-            this.loginLabel.BackColor = System.Drawing.Color.White;
-            this.loginLabel.Location = new System.Drawing.Point(164, 62);
-            this.loginLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.loginLabel.Name = "loginLabel";
-            this.loginLabel.Size = new System.Drawing.Size(60, 24);
-            this.loginLabel.TabIndex = 0;
-            this.loginLabel.Text = "Логин:";
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(89)))), ((int)(((byte)(139)))));
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(327, 51);
+            this.panel2.TabIndex = 28;
             // 
-            // passwLabel
+            // lablCapcha
             // 
-            this.passwLabel.AutoSize = true;
-            this.passwLabel.Location = new System.Drawing.Point(153, 110);
-            this.passwLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.passwLabel.Name = "passwLabel";
-            this.passwLabel.Size = new System.Drawing.Size(71, 24);
-            this.passwLabel.TabIndex = 1;
-            this.passwLabel.Text = "Пароль:";
+            this.lablCapcha.AutoSize = true;
+            this.lablCapcha.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lablCapcha.Location = new System.Drawing.Point(141, 182);
+            this.lablCapcha.Name = "lablCapcha";
+            this.lablCapcha.Size = new System.Drawing.Size(56, 22);
+            this.lablCapcha.TabIndex = 37;
+            this.lablCapcha.Text = "Капча";
             // 
-            // autorizLabel
+            // capchaTEXT
             // 
-            this.autorizLabel.AutoSize = true;
-            this.autorizLabel.Location = new System.Drawing.Point(248, 9);
-            this.autorizLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.autorizLabel.Name = "autorizLabel";
-            this.autorizLabel.Size = new System.Drawing.Size(109, 24);
-            this.autorizLabel.TabIndex = 2;
-            this.autorizLabel.Text = "Авторизация";
+            this.capchaTEXT.Location = new System.Drawing.Point(121, 219);
+            this.capchaTEXT.Name = "capchaTEXT";
+            this.capchaTEXT.Size = new System.Drawing.Size(100, 20);
+            this.capchaTEXT.TabIndex = 36;
             // 
-            // loginTextBox
+            // panel3
             // 
-            this.loginTextBox.Location = new System.Drawing.Point(231, 62);
-            this.loginTextBox.Name = "loginTextBox";
-            this.loginTextBox.Size = new System.Drawing.Size(180, 30);
-            this.loginTextBox.TabIndex = 3;
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(89)))), ((int)(((byte)(139)))));
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel3.Location = new System.Drawing.Point(0, 370);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(327, 74);
+            this.panel3.TabIndex = 35;
             // 
-            // passwTextBox
+            // passTBOX
             // 
-            this.passwTextBox.Location = new System.Drawing.Point(231, 110);
-            this.passwTextBox.Name = "passwTextBox";
-            this.passwTextBox.Size = new System.Drawing.Size(180, 30);
-            this.passwTextBox.TabIndex = 4;
+            this.passTBOX.Location = new System.Drawing.Point(135, 101);
+            this.passTBOX.Name = "passTBOX";
+            this.passTBOX.Size = new System.Drawing.Size(99, 20);
+            this.passTBOX.TabIndex = 34;
             // 
-            // enterButton
+            // loginTbox
             // 
-            this.enterButton.Location = new System.Drawing.Point(79, 251);
-            this.enterButton.Name = "enterButton";
-            this.enterButton.Size = new System.Drawing.Size(123, 39);
-            this.enterButton.TabIndex = 5;
-            this.enterButton.Text = "Войти";
-            this.enterButton.UseVisualStyleBackColor = true;
-            this.enterButton.Click += new System.EventHandler(this.enterButton_Click);
+            this.loginTbox.Location = new System.Drawing.Point(135, 73);
+            this.loginTbox.Name = "loginTbox";
+            this.loginTbox.Size = new System.Drawing.Size(99, 20);
+            this.loginTbox.TabIndex = 33;
             // 
-            // registButton
+            // regBUTTON
             // 
-            this.registButton.Location = new System.Drawing.Point(394, 251);
-            this.registButton.Name = "registButton";
-            this.registButton.Size = new System.Drawing.Size(123, 39);
-            this.registButton.TabIndex = 6;
-            this.registButton.Text = "Регистрация";
-            this.registButton.UseVisualStyleBackColor = true;
-            this.registButton.Click += new System.EventHandler(this.registButton_Click);
+            this.regBUTTON.AutoSize = true;
+            this.regBUTTON.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(178)))), ((int)(((byte)(188)))));
+            this.regBUTTON.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.regBUTTON.Location = new System.Drawing.Point(96, 297);
+            this.regBUTTON.Name = "regBUTTON";
+            this.regBUTTON.Size = new System.Drawing.Size(162, 22);
+            this.regBUTTON.TabIndex = 32;
+            this.regBUTTON.Text = "Зарегистрироваться";
+            this.regBUTTON.Click += new System.EventHandler(this.regBUTTON_Click);
             // 
-            // captchaLabel
+            // label2
             // 
-            this.captchaLabel.AutoSize = true;
-            this.captchaLabel.Location = new System.Drawing.Point(280, 152);
-            this.captchaLabel.Name = "captchaLabel";
-            this.captchaLabel.Size = new System.Drawing.Size(57, 24);
-            this.captchaLabel.TabIndex = 7;
-            this.captchaLabel.Text = "Капча";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(62, 99);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(63, 22);
+            this.label2.TabIndex = 31;
+            this.label2.Text = "Пароль";
             // 
-            // captchaTextBox
+            // label1
             // 
-            this.captchaTextBox.Location = new System.Drawing.Point(252, 192);
-            this.captchaTextBox.Name = "captchaTextBox";
-            this.captchaTextBox.Size = new System.Drawing.Size(118, 30);
-            this.captchaTextBox.TabIndex = 8;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 15F);
+            this.label1.Location = new System.Drawing.Point(62, 70);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(55, 24);
+            this.label1.TabIndex = 30;
+            this.label1.Text = "Логин";
             // 
-            // panel1
+            // entButt
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(89)))), ((int)(((byte)(139)))));
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(593, 56);
-            this.panel1.TabIndex = 26;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::SalonKrasotiIS.Properties.Resources.logo;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(59, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 28;
-            this.pictureBox1.TabStop = false;
+            this.entButt.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.entButt.Location = new System.Drawing.Point(135, 255);
+            this.entButt.Name = "entButt";
+            this.entButt.Size = new System.Drawing.Size(74, 31);
+            this.entButt.TabIndex = 29;
+            this.entButt.Text = "Войти";
+            this.entButt.UseVisualStyleBackColor = true;
+            this.entButt.Click += new System.EventHandler(this.entButt_Click);
             // 
             // AutorizForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(593, 314);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.captchaTextBox);
-            this.Controls.Add(this.captchaLabel);
-            this.Controls.Add(this.registButton);
-            this.Controls.Add(this.enterButton);
-            this.Controls.Add(this.passwTextBox);
-            this.Controls.Add(this.loginTextBox);
-            this.Controls.Add(this.autorizLabel);
-            this.Controls.Add(this.passwLabel);
-            this.Controls.Add(this.loginLabel);
-            this.Font = new System.Drawing.Font("Monotype Corsiva", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ClientSize = new System.Drawing.Size(327, 444);
+            this.Controls.Add(this.lablCapcha);
+            this.Controls.Add(this.capchaTEXT);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.passTBOX);
+            this.Controls.Add(this.loginTbox);
+            this.Controls.Add(this.regBUTTON);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.entButt);
+            this.Controls.Add(this.panel2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "AutorizForm";
             this.Text = "Авторизация";
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.AutorizForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -186,6 +168,16 @@
         private System.Windows.Forms.TextBox captchaTextBox;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label lablCapcha;
+        private System.Windows.Forms.TextBox capchaTEXT;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.TextBox passTBOX;
+        private System.Windows.Forms.TextBox loginTbox;
+        private System.Windows.Forms.Label regBUTTON;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button entButt;
     }
 }
 
