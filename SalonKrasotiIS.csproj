@@ -33,8 +33,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,14 +55,89 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="adminForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="adminForm.Designer.cs">
+      <DependentUpon>adminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminSOTRUDForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminSOTRUDForm.Designer.cs">
+      <DependentUpon>adminSOTRUDForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminUSERSForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminUSERSForm.Designer.cs">
+      <DependentUpon>adminUSERSForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminZAPISForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminZAPISForm.Designer.cs">
+      <DependentUpon>adminZAPISForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutorizForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutorizForm.Designer.cs">
+      <DependentUpon>AutorizForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\SalonKrasotiDB.cs" />
+    <Compile Include="Entity\sysdiagrams.cs" />
+    <Compile Include="Entity\Категория_услуги.cs" />
+    <Compile Include="Entity\Клиент.cs" />
+    <Compile Include="Entity\Отчеты.cs" />
+    <Compile Include="Entity\Пользователи.cs" />
+    <Compile Include="Entity\Предстоящие_записи.cs" />
+    <Compile Include="Entity\Роль.cs" />
+    <Compile Include="Entity\Сотрудники.cs" />
+    <Compile Include="Entity\Услуги.cs" />
+    <Compile Include="klientForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="klientForm.Designer.cs">
+      <DependentUpon>klientForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="registrForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="registrForm.Designer.cs">
+      <DependentUpon>registrForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalonKrasotiDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalonKrasotiDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SotrudnikForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SotrudnikForm.Designer.cs">
+      <DependentUpon>SotrudnikForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="adminForm.resx">
+      <DependentUpon>adminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminSOTRUDForm.resx">
+      <DependentUpon>adminSOTRUDForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminUSERSForm.resx">
+      <DependentUpon>adminUSERSForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminZAPISForm.resx">
+      <DependentUpon>adminZAPISForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutorizForm.resx">
+      <DependentUpon>AutorizForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="klientForm.resx">
+      <DependentUpon>klientForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,7 +146,19 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="registrForm.resx">
+      <DependentUpon>registrForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SotrudnikForm.resx">
+      <DependentUpon>SotrudnikForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\SalonKrasotiIS.Entity.Пользователи.datasource" />
+    <None Include="Properties\DataSources\SalonKrasotiIS.Entity.Предстоящие_записи.datasource" />
+    <None Include="Properties\DataSources\SalonKrasotiIS.Entity.Сотрудники.datasource" />
+    <None Include="Properties\DataSources\SalonKrasotiIS.Entity.Услуги.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -72,9 +168,23 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="SalonKrasotiDataSet.xsc">
+      <DependentUpon>SalonKrasotiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SalonKrasotiDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SalonKrasotiDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SalonKrasotiDataSet.xss">
+      <DependentUpon>SalonKrasotiDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

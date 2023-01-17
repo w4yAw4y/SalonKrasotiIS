@@ -10,11 +10,12 @@ using System.Windows.Forms;
 
 namespace SalonKrasotiIS
 {
-    public partial class Form1 : Form
+    public partial class registrForm : Form
     {
-        public Form1()
+        public registrForm()
         {
             InitializeComponent();
+            this.BackColor = ColorTranslator.FromHtml("#ffffff");
         }
     }
 }
